@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@300;400;500&display=swap");
+
+.navbar .wrapper-logo {
+  justify-content: center;
+}
+
+body {
+  background-color: #f6f3ed;
+  color: #fff;
+  margin: 0;
+  font-family: "Alegreya", serif;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+a {
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+h1,
+a {
+  font-family: "Alegreya Sans";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.bg-custom {
+  background-color: #f6f3ed;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bg-custom1 {
+  background-color: #f6f3ed;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar.bg-custom .wrapper-logo {
+  justify-content: center;
+}
+
+.navbar-brand {
+  font-family: "Alegreya Sans";
+  font-style: normal;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.31em;
+}
+
+.wrapper-logo {
+  border-bottom: 1px solid #bfb5a7;
+}
+
+.navbar.bg-custom1 {
+  padding: 3px;
+}
+
+.subscribe {
+  display: inline-flex;
+  flex-direction: row;
+  border-bottom: 1px solid #bfb5a7;
+  margin-right: 48px;
+}
+
+#home {
+  background: url("img/Rectangle 2.png");
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#home .home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 891px;
+}
+
+#home .home-text {
+  display: flex;
+  justify-content: center;
+}
+
+#home .home-text h1 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 0;
+  margin: 30px 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home .home-btn {
+  display: flex;
+  justify-content: center;
+}
+#home .home-btn a {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #f2e6bf;
+  background: #31423d;
+  width: 200px;
+}
+
+.running-text {
+  background: #fff;
+}
+
+.rt {
+  padding: 0 10px;
+}
+
+#running-text a {
+  color: transparent;
+}
+
+/* Section 1*/
+#section1 {
+  background-image: url("img/Background-group.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center 97px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+#section1 .section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 891px;
+}
+
+#section1 .section-text {
+  display: flex;
+  justify-content: center;
+}
+
+#section1 .section-text h1 {
+  background: rgba(254, 250, 236, 0.8);
+  backdrop-filter: blur(15px);
+  font-family: "Alegreya";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #31423d;
+  padding: 20px 40px;
+  width: 66%;
+}
+
+#section1 .section-btn {
+  display: flex;
+  justify-content: center;
+}
+#section1 .section-btn a {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #f2e6bf;
+  background: #31423d;
+  width: 200px;
+}
+
+/* omen product */
+
+#omen_product {
+  margin: 30px 0;
+}
+
+#omen_product .row p {
+  color: #31423d;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  font-family: "Alegreya";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 60px;
+  margin-top: -40px;
+}
+
+#omen_product .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#omen_product .container-fluid .row {
+  text-align: center;
+}
+
+#omen_product h2 {
+  font-family: "Alegreya";
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 0.3em;
+  color: #49625a;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* as-seen section */
+
+#as-seen {
+  margin: 30px 0;
+}
+
+#as-seen .bg-seen {
+  background-image: url("img/asseenimg.png");
+  min-height: 737px;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+}
+
+#as-seen .wrap-content {
+  padding: 85px 86px 90px;
+  background-color: #31423d;
+  min-height: 501px;
+  background-size: 80%;
+  margin-top: -240px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#as-seen .title-wrap {
+  width: 30%;
+}
+
+#as-seen .brand-wrap {
+  width: 70%;
+}
+
+#as-seen .brand-seen {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#as-seen .brand-wrapper {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 150px;
+  border: 1px solid #49625a;
+  border-right: 0;
+}
+
+#as-seen .brand-wrapper:nth-child(3n) {
+  border-right: 1px solid #49625a;
+}
+
+#as-seen .title-seen {
+  height: 120px;
+  padding: 20px 20px;
+  width: 210px;
+}
+
+#as-seen .title-seen h2 {
+  color: #f2e6bf;
+  letter-spacing: 0.12em;
+  font-family: "Alegreya";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+#as-seen .brand-wrap {
+}
+
+/* Our Journal */
+
+#ourjournal {
+  padding: 80px 0;
+  overflow: hidden;
+  border-bottom: 1px solid #bfb5a7;
+}
+
+#ourjournal .row {
+  align-items: center;
+}
+
+#ourjournal .row .row-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ourjournal .journal-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#ourjournal .journal-img img {
+  width: 280px;
+}
+
+#ourjournal .journal-title {
+  font-family: "Alegreya";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  letter-spacing: 0.12em;
+  color: #49625a;
+  padding: 0 20px;
+}
+
+#ourjournal .journalimg {
+  padding: 0 20px;
+}
+
+#ourjournal .journal-btn {
+  text-align: center;
+}
+
+#ourjournal .btn-journal {
+  background: #31423d;
+  width: 218px;
+  color: #f2e6bf;
+}
+
+/* footer */
+
+#omen-footer {
+  padding-top: 40px;
+  background-image: url(img/footer.png);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  min-height: 676px;
+}
+
+#omen-footer .foot-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#omen-footer h2 {
+  font-family: "Alegreya Sans";
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 34px;
+  letter-spacing: 0.27em;
+  color: #31423d;
+}
+
+#omen-footer .footer-text {
+  font-family: "Alegreya Sans";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 35px;
+  letter-spacing: 0.12em;
+}
+
+#omen-footer .footer-text a p {
+  color: #49625a;
+}
+
+/* @media */
+@media (min-width: 360px) and (max-width: 991px) {
+  nav .navbar-nav {
+    display: inline;
+  }
+  nav .vector li a {
+    margin-left: 10px;
+  }
+  nav .container-fluid.wrapper-logo {
+    display: flex;
+    justify-content: space-between !important;
+    border-bottom: none;
+  }
+  #home {
+    background-position-y: 50px;
+  }
+  #home .home-text h1 {
+    font-size: 2rem;
+  }
+  #home .home-content {
+    height: 381px;
+  }
+  #home .btn-home {
+    width: 100px;
+    height: 32px;
+  }
+  .btn {
+    padding: 0px 0;
+    border-radius: 0;
+    margin: 30px 0;
+  }
+  #home .home-btn a {
+    font-size: 0.7rem;
+    width: 100px;
+    height: 32px;
+  }
+  #running-text img .sparkle {
+    height: 20px;
+  }
+  #running-text .rt img {
+    margin: 10px 0;
+    height: 14px;
+  }
+  #section1 {
+    background-size: 131%;
+    background-position: center 15px;
+  }
+  #section1 .section-text h1 {
+    font-size: 0.8rem;
+    line-height: 25px;
+    padding: 10px 0px;
+    width: 100%;
+    margin: 0 20px;
+  }
+  #section1 .section-btn {
+    width: 100px;
+    height: 32px;
+  }
+  #section1 .section-btn a {
+    font-size: 0.7rem;
+    width: 100px;
+    height: 32px;
+  }
+  #section1 .section-content {
+    height: 437px;
+  }
+  #section1 .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #omen_product h2 {
+    font-size: 20px;
+  }
+  #omen_product .ourproduct {
+    height: 300px;
+  }
+  #ourjournal .row-items {
+    margin-bottom: 60px;
+  }
+  #ourjournal .journal-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #ourjournal .journalimg {
+    padding: 20px 0;
+  }
+  #ourjournal .journal-btn {
+    width: 100px;
+    height: 32px;
+  }
+  #ourjournal .journal-btn a {
+    font-size: 0.7rem;
+    width: 100px;
+    height: 32px;
+  }
+  #as-seen .row {
+    margin-top: -475px;
+    min-height: 400px;
+  }
+  #omen-footer {
+    background-image: none;
+  }
+  #omen-footer .foot-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
