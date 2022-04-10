@@ -659,7 +659,8 @@ a:hover {
     flex-direction: column;
   }
   #omen-footer .footerinfo {
-    padding: 0;
+    padding: 0 15px;
+    justify-content: space-between;
   }
   #omen-footer .footer-img img {
     width: 161%;
