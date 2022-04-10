@@ -20,45 +20,53 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
-    <div class="container-fluid wrapper-menu dropdown">  
-      <div style="margin: 0 40px;" class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Product</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Sale</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Our Journal</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav mx-md-auto">
-          <div class="subscribe">
+    <div class="container-fluid dropdown">  
+      <div class="collapse navbar-collapse wrapper-menu" id="navbarSupportedContent">
+        <div id="navitem">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Subscribe us</a>
+              <a class="nav-link active" aria-current="page" href="#">About</a>
             </li>
-             <div class="nav-link active vector">
-                  <li class="navbar-nav mx-auto nav-item">
-                      <a href=""><img src="img/Vector-icon.svg" alt="#"></a>
-                  </li>
-             </div>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Sale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Our Journal</a>
+            </li>
+          </ul>
+        </div>
+        <div id="navitem" class="subscribe">
+          <div class="subscribe-text">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Subscribe us</a>
+              </li>
+            </ul>
           </div>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Instagram</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Facebook</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Pinterest</a>
-          </li>
-        </ul>
+          <div class="nav-link active vector">
+            <ul class="navbar-nav">
+              <li class="navbar-nav mx-auto nav-item">
+                  <a href=""><img src="img/Vector-icon.svg" alt="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="navitem">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Instagram</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Facebook</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Pinterest</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
@@ -152,38 +160,38 @@
     <div class="container-fluid bg-seen"></div>
     <div class="container">
       <div class="row wrap-content">
-        <div class="title-wrap col-sm-12">
+        <div class="title-wrap">
           <div class="title-seen">
             <h2>AS SEEN IN -</h2>
           </div>
         </div>
-        <div class="brand-wrap col-sm-12">
-          <div class="brand-seen col-sm-12">
-            <div class="brand-wrapper col-sm-12"> <!-- 1 -->
+        <div class="brand-wrap">
+          <div class="brand-seen">
+            <div class="brand-wrapper"> <!-- 1 -->
               <img src="img/VOGUE_LOGO 1.svg" alt="VOGUE_LOGO">
             </div>
-            <div class="brand-wrapper col-sm-12""> <!-- 2 -->
+            <div class="brand-wrapper"> <!-- 2 -->
               <img src="img/Allure_logo 1.svg" alt="Allure Logo">
             </div>
-            <div class="brand-wrapper col-sm-12""> <!-- 3 -->
+            <div class="brand-wrapper"> <!-- 3 -->
               <img src="img/NewBeauty_Logo 1.svg" alt="NewBeauty_Logo">
             </div>
-            <div class="brand-wrapper col-sm-12""> <!-- 4 -->
+            <div class="brand-wrapper"> <!-- 4 -->
               <img src="img/GQ_Logo 1.svg" alt="GQ_Logo">
             </div>
-            <div class="brand-wrapper col-sm-12""> <!-- 5 -->
+            <div class="brand-wrapper"> <!-- 5 -->
               <img src="img/Grazia-Logo 1.svg" alt="Grazia-Logo">
             </div>
-            <div class="brand-wrapper col-sm-12""> <!-- 6 -->
+            <div class="brand-wrapper"> <!-- 6 -->
               <img src="img/InStyle 1.svg" alt="InStyle">
             </div>
-            <div class="brand-wrapper col-sm-12""> <!-- 7 -->
+            <div class="brand-wrapper"> <!-- 7 -->
               <img src="img/ELLE_Magazine_Logo 1.svg" alt=" ELLE_Magazine_Logo">
             </div>
-            <div class="brand-wrapper col-sm-12""> <!-- 8 -->
+            <div class="brand-wrapper"> <!-- 8 -->
               <img src="img/B..svg" alt="B. Logo">
             </div>
-            <div class="brand-wrapper col-sm-12""> <!-- 9 -->
+            <div class="brand-wrapper"> <!-- 9 -->
               <img src="img/Zhafran.svg" alt="Zhafran">
             </div>
           </div>
@@ -193,7 +201,7 @@
   </section>
 
   <section id="ourjournal">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="row-items col-lg-3 col-md-12 col-sm-12">
           <div class="journal-title">
@@ -204,19 +212,28 @@
           </div>
         </div>
         <div class="journal-img col-lg-9 col-md-12 col-sm-12">
-          <div class="">
+          <div class="journal-wrap">
             <div class="journalimg">
               <img src="img/Rectangle 18.png" alt="">
             </div>
+            <div class="journaltext1">
+              <h2>Skincare tips for 2022 using water</h2>
+            </div>
           </div>
-          <div class="">
+          <div class="journal-wrap">
             <div class="journalimg">
               <img src="img/Rectangle 19.png" alt="">
             </div>
+            <div class="journaltext2">
+              <h2>Skin type 101 in the world</h2>
+            </div>
           </div>
-          <div class="">
+          <div class="journal-wrap">
             <div class="journalimg">
               <img src="img/journalimg3.png" alt="">
+            </div>
+            <div class="journaltext3">
+              <h2>The best type 101 in the Indonesia</h2>
             </div>
           </div>
         </div>
@@ -226,26 +243,28 @@
 
   <footer id="omen-footer">
     <div class="container foot-container">
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <h2>OMEN</h2>
-        <div style="margin-top: 40px" class="footer-text">
-          <a href="#"><p>Our Story</p></a>
-          <a href="#"><p>Product</p></a>
-          <a href="#"><p>FAQ</p></a>
-          <a href="#"><p>Our Ingradient</p></a>
+      <div class="footerinfo col-lg-6 col-md-12 col-sm-12">
+        <div class="">
+          <h2>OMEN</h2>
+          <div class="footer-text">
+            <a href="#"><p>Our Story</p></a>
+            <a href="#"><p>Product</p></a>
+            <a href="#"><p>FAQ</p></a>
+            <a href="#"><p>Our Ingradient</p></a>
+          </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <h2>SOCIAL MEDIA</h2>
-        <div style="margin-top: 40px" class="footer-text">
-          <a href="#"><p>Instagram</p></a>
-          <a href="#"><p>Pinterest</p></a>
-          <a href="#"><p>Twitter</p></a>
+        <div class="">
+          <h2>SOCIAL MEDIA</h2>
+          <div class="footer-text">
+            <a href="#"><p>Instagram</p></a>
+            <a href="#"><p>Pinterest</p></a>
+            <a href="#"><p>Twitter</p></a>
+          </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-12 col-sm-12">
         <h2>TOP PRODUCT</h2>
-        <div style="margin-top: 40px" class="footer-text">
+        <div class="footer-text">
           <a href="#"><p>Omen Skin</p></a>
           <a href="#"><p>Omen Cream</p></a>
           <a href="#"><p>Omen Fresh Care</p></a>
@@ -253,10 +272,13 @@
       </div>
       <div class="col-lg-3 col-md-12 col-sm-12">
         <h2>ABOUT US</h2>
-        <div style="margin-top: 40px" class="footer-text">
+        <div class="footer-text">
           <a href="#"><p>The User Content it is a true and accurate expression of your honest belief based on use of SkinCeuticals products and that you have and will disclose receipt of any free.</p></a>
         </div>
       </div>
+    </div>
+    <div class="footer-img">
+      <img src="img/footer.png" alt="">
     </div>
   </footer>
   

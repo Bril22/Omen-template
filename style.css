@@ -4,6 +4,10 @@
   justify-content: center;
 }
 
+#navitem li a {
+  margin: 0 10px;
+}
+
 body {
   background-color: #f6f3ed;
   color: #fff;
@@ -28,12 +32,15 @@ a {
   background-color: #f6f3ed;
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 
-.bg-custom1 {
-  background-color: #f6f3ed;
-  display: flex;
-  flex-wrap: wrap;
+.wrapper-menu {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 40px;
+  min-height: 60px;
 }
 
 .navbar.bg-custom .wrapper-logo {
@@ -61,15 +68,18 @@ a {
   flex-direction: row;
   border-bottom: 1px solid #bfb5a7;
   margin-right: 48px;
+  justify-content: space-between;
+  min-width: 240px;
 }
 
 #home {
   background: url("img/Rectangle 2.png");
   background-size: cover;
-  background-position: center;
+  background-position: center 93px;
   align-items: center;
   background-repeat: no-repeat;
   overflow: hidden;
+  max-height: 809px;
 }
 
 #home .home-content {
@@ -116,6 +126,7 @@ a {
 
 .running-text {
   background: #fff;
+  min-height: 60px;
 }
 
 .rt {
@@ -134,6 +145,7 @@ a {
   background-position: center 97px;
   overflow: hidden;
   margin-bottom: 60px;
+  position: relative;
 }
 
 #section1 .section-content {
@@ -298,7 +310,7 @@ a:hover {
 /* Our Journal */
 
 #ourjournal {
-  padding: 80px 0;
+  padding: 90px 0 80px;
   overflow: hidden;
   border-bottom: 1px solid #bfb5a7;
 }
@@ -310,18 +322,28 @@ a:hover {
 #ourjournal .row .row-items {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 0 50px;
 }
 
 #ourjournal .journal-img {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
 }
 
 #ourjournal .journal-img img {
-  width: 280px;
+  width: 350px;
+}
+
+#ourjournal .journal-img h2 {
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.12em;
+  color: #31423d;
+  font-weight: 400;
+  background: rgba(242, 230, 191, 0.6);
+  backdrop-filter: blur(15px);
+  padding: 20px 12px 20px 29px;
+  max-width: 315px;
 }
 
 #ourjournal .journal-title {
@@ -331,11 +353,12 @@ a:hover {
   line-height: 60px;
   letter-spacing: 0.12em;
   color: #49625a;
-  padding: 0 20px;
 }
 
-#ourjournal .journalimg {
+#ourjournal .journal-wrap {
   padding: 0 20px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #ourjournal .journal-btn {
@@ -347,18 +370,28 @@ a:hover {
   width: 218px;
   color: #f2e6bf;
 }
+#ourjournal .journaltext1 {
+  position: absolute;
+  bottom: 36px;
+}
+#ourjournal .journaltext2 {
+  position: absolute;
+  bottom: 36px;
+}
+#ourjournal .journaltext3 {
+  position: absolute;
+  bottom: 36px;
+}
 
 /* footer */
 
 #omen-footer {
   padding-top: 40px;
-  background-image: url(img/footer.png);
   background-size: cover;
   background-position: center;
   align-items: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  min-height: 676px;
 }
 
 #omen-footer .foot-container {
@@ -381,13 +414,43 @@ a:hover {
   font-size: 1rem;
   line-height: 35px;
   letter-spacing: 0.12em;
+  margin-top: 40px;
 }
 
 #omen-footer .footer-text a p {
   color: #49625a;
 }
 
+#omen-footer .footerinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#omen-footer .footer-img {
+  position: relative;
+  margin-top: 203px;
+}
+
+#omen-footer .footer-img img {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
 /* @media */
+@media (min-width: 360px) and (max-width: 480px) {
+  #section1 .section-content {
+    height: 367px !important;
+  }
+  #section1 {
+    background-size: 145% !important;
+    background-position: center 15px !important;
+  }
+  #as-seen .row {
+    margin-top: -520px !important;
+  }
+}
 @media (min-width: 360px) and (max-width: 991px) {
   nav .navbar-nav {
     display: inline;
@@ -395,16 +458,30 @@ a:hover {
   nav .vector li a {
     margin-left: 10px;
   }
+  .wrapper-logo {
+    margin: 10px 20px;
+  }
+  .wrapper-menu {
+    margin: 0 15px;
+  }
   nav .container-fluid.wrapper-logo {
     display: flex;
     justify-content: space-between !important;
     border-bottom: none;
   }
+  .subscribe {
+    min-width: 0;
+    margin-right: 0;
+  }
   #home {
     background-position-y: 50px;
+    background-size: 166%;
   }
   #home .home-text h1 {
     font-size: 2rem;
+    margin: 0 32px;
+    line-height: 36px;
+    letter-spacing: 0.07em;
   }
   #home .home-content {
     height: 381px;
@@ -429,6 +506,9 @@ a:hover {
   #running-text .rt img {
     margin: 10px 0;
     height: 14px;
+  }
+  .running-text {
+    min-height: 0;
   }
   #section1 {
     background-size: 131%;
@@ -458,6 +538,8 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 95px;
   }
   #omen_product h2 {
     font-size: 20px;
@@ -465,30 +547,113 @@ a:hover {
   #omen_product .ourproduct {
     height: 300px;
   }
+  #ourjournal {
+    padding: 60px 0 80px;
+  }
   #ourjournal .row-items {
     margin-bottom: 60px;
+    align-items: flex-start !important;
+    padding: 0 15px !important;
+  }
+  #ourjournal .journal-title {
+    padding: 0;
+  }
+  #ourjournal .journal-title h2 {
+    font-size: 20px;
+    line-height: 33px;
+    max-width: 133px;
   }
   #ourjournal .journal-img {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
   }
   #ourjournal .journalimg {
-    padding: 20px 0;
+    padding: 10px 0;
   }
+  #ourjournal .journal-img img {
+    width: 100%;
+  }
+  #ourjournal .journal-img .journaltext1 {
+    position: absolute;
+    max-width: 293px;
+    top: 211px;
+  }
+  #ourjournal .journal-img .journaltext2 {
+    position: absolute;
+    max-width: 293px;
+    top: 713px;
+  }
+  #ourjournal .journal-img .journaltext3 {
+    position: absolute;
+    max-width: 293px;
+    top: 1157px;
+  }
+  #ourjournal .journal-img h2 {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 24px 56px 24px 32px;
+  }
+
   #ourjournal .journal-btn {
     width: 100px;
     height: 32px;
+    margin-top: -6px;
   }
   #ourjournal .journal-btn a {
     font-size: 0.7rem;
     width: 100px;
     height: 32px;
   }
-  #as-seen .row {
+  #ourjournal .journal-wrap {
+    padding: 0 15px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #ourjournal .journaltext1 {
+    position: absolute;
+    bottom: 155px;
+  }
+  #as-seen .wrap-content {
     margin-top: -475px;
-    min-height: 400px;
+    min-height: 1612px;
+    padding: 0 36px;
+  }
+  #as-seen .bg-seen {
+    background-size: 155%;
+    background-position: -112px 0px;
+  }
+  #as-seen .title-wrap,
+  #as-seen .brand-wrap,
+  #as-seen .brand-seen,
+  #as-seen .brand-wrapper {
+    width: 100%;
+  }
+  #as-seen .title-seen {
+    max-width: 124px;
+    padding: 0;
+    height: 0;
+  }
+  #as-seen .title-seen h2 {
+    font-size: 20px;
+    line-height: 33px;
+  }
+  #as-seen .brand-seen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #as-seen .brand-wrapper {
+    border: 1px solid #49625a;
+    border-bottom: 0;
+  }
+  #as-seen .brand-wrapper:nth-child(9n) {
+    border-bottom: 1px solid #49625a;
+  }
+  #as-seen .brand-wrap {
+    margin-top: -65px;
   }
   #omen-footer {
     background-image: none;
@@ -496,5 +661,15 @@ a:hover {
   #omen-footer .foot-container {
     display: flex;
     flex-direction: column;
+  }
+  #omen-footer .footerinfo {
+    padding: 0;
+  }
+  #omen-footer .footer-img img {
+    width: 161%;
+    left: -104px;
+  }
+  #omen-footer .footer-img {
+    margin-top: 100px;
   }
 }
