@@ -579,7 +579,7 @@ a:hover {
   #ourjournal .journal-img .journaltext1 {
     position: absolute;
     max-width: 293px;
-    top: 211px;
+    top: 268px;
   }
   #ourjournal .journal-img .journaltext2 {
     position: absolute;
@@ -611,10 +611,6 @@ a:hover {
     padding: 0 15px;
     display: flex;
     justify-content: flex-end;
-  }
-  #ourjournal .journaltext1 {
-    position: absolute;
-    bottom: 155px;
   }
   #as-seen .wrap-content {
     margin-top: -475px;
